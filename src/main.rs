@@ -1,3 +1,6 @@
+mod modules;
+
 fn main() {
-    println!("Hello, world!");
+    modules::hello_world::hello_world();
+    modules::formatted_print::formatted_print()
 }
