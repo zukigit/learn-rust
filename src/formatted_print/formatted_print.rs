@@ -1,0 +1,2 @@
+fn formatted_printed() {
+}
