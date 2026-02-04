@@ -15,5 +15,6 @@ pub fn formatted_print() {
 
     let cover_letter = format!("My name is {}. I'm {} years old", "Htoo Zaw Aung", 25);
 
-    println!("{}", cover_letter);
+    println!("{:?}", cover_letter); // formal usage
+    println!("{cover_letter}"); // this is cool
 }
