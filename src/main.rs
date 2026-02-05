@@ -6,4 +6,5 @@ fn main() {
     modules::debug::debug();
     say_hello!();
     modules::operators::operators();
+    modules::tuples::tuples();
 }
