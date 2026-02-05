@@ -8,4 +8,5 @@ fn main() {
     modules::operators::operators();
     modules::tuples::tuples();
     modules::variables::variables();
+    modules::arrays_and_slices::arrays_and_slices();
 }
