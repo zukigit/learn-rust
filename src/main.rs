@@ -7,4 +7,5 @@ fn main() {
     say_hello!();
     modules::operators::operators();
     modules::tuples::tuples();
+    modules::variables::variables();
 }
