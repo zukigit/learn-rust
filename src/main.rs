@@ -7,4 +7,6 @@ fn main() {
     say_hello!();
     modules::operators::operators();
     modules::tuples::tuples();
+    modules::variables::variables();
+    modules::arrays_and_slices::arrays_and_slices();
 }
