@@ -20,7 +20,6 @@ pub fn arrays_and_slices() {
     vet.push(String::from("hola"));
     vet.push(String::from("world"));
 
-    // write
     for val in &mut vet {
         val.push_str(" extended");
     }

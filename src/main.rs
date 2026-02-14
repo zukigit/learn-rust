@@ -9,4 +9,6 @@ fn main() {
     modules::tuples::tuples();
     modules::variables::variables();
     modules::arrays_and_slices::arrays_and_slices();
+
+    modules::custom_types::custom_types();
 }
