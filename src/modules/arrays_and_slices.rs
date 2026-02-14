@@ -15,10 +15,18 @@ pub fn arrays_and_slices() {
     assert_eq!(&empty_array, &[]);
     assert_eq!(&empty_array, &[][..]); // Same but more verbose
 
-    let mut vet: Vec<&str> = Vec::new();
+    let mut vet: Vec<String> = Vec::new();
 
-    vet.push("10");
-    vet.push("hello");
+    vet.push(String::from("hola"));
+    vet.push(String::from("world"));
 
-    assert_eq!(vet.capacity(), 0);
+    // write
+    for val in &mut vet {
+        val.push_str(" extended");
+    }
+
+    // with read permission
+    for val in &vet {
+        println!("val: {}", val);
+    }
 }
