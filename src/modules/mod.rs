@@ -9,3 +9,4 @@ pub mod arrays_and_slices;
 pub mod custom_types;
 pub mod structures;
 pub mod enums;
+pub mod constants;

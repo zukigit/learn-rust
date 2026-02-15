@@ -25,12 +25,15 @@ fn detect(event: WebEvent) {
         WebEvent::KeyPress(key) => println!("It is key press, key: {}", key),
         WebEvent::Click { x, y } => println!("It is click, x: {}, y: {}", x, y),
         WebEvent::Paste(str) => println!("It is paste, str: {}", str)
-
     }
 }
 
 pub fn enums() {
-    let page_load = WebEvent::PageLoad;
+    // Automatically `use` each name inside `WebEvent`.
+    use WebEvent::*;
+
+    // we can use both WebEvent::PageLoad and just PageLoad
+    let page_load = PageLoad;
     let page_unload = WebEvent::PageUnload;
     let key_press: WebEvent = WebEvent::KeyPress('g');
     let paste: WebEvent = WebEvent::Paste(String::from("it is some copy string"));
