@@ -11,4 +11,5 @@ fn main() {
     modules::arrays_and_slices::arrays_and_slices();
 
     modules::custom_types::custom_types();
+    modules::types::types();
 }
