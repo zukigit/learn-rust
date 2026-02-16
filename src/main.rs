@@ -12,4 +12,5 @@ fn main() {
 
     modules::custom_types::custom_types();
     modules::types::types();
+    modules::conversion::conversions();
 }
