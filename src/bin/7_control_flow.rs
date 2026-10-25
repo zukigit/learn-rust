@@ -14,4 +14,24 @@ fn main() {
         }
     };
     println!("final loop result: {}", loop_result);
+
+    // inner loop can break or continue outer loop
+    let mut i = 0;
+    'outer: loop {
+        i += 1;
+        let mut j = 0;
+
+        loop {
+            j += 1;
+
+            if j == 3 {
+                continue 'outer; // skip the rest of inner loop, go to next i
+            }
+            if i == 4 {
+                break 'outer; // exit both loops entirely
+            }
+
+            println!("i = {i}, j = {j}");
+        }
+    }
 }
