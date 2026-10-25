@@ -40,4 +40,14 @@ fn main() {
     for element in a {
         println!("the value is: {element}");
     }
+
+    // match
+    let number = 7;
+    match number {
+        1 => println!("one"),
+        2 | 3 => println!("two or three"),
+        4..=6 => println!("four to six"),
+        n if n % 2 == 1 => println!("{n} is odd and 7 or more"),
+        _ => println!("something else"),
+    }
 }
