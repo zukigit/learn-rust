@@ -34,4 +34,10 @@ fn main() {
             println!("i = {i}, j = {j}");
         }
     }
+
+    // loop through a collection
+    let a = [10, 20, 30, 40, 50];
+    for element in a {
+        println!("the value is: {element}");
+    }
 }
